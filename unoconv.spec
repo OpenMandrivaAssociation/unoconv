@@ -39,3 +39,10 @@ RTF, Docbook (.xml), and more.
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1*
 
+
+
+%changelog
+* Mon Apr 02 2012 Matthew Dawkins <mattydaw@mandriva.org> 0.4-1
++ Revision: 788812
+- imported package unoconv
+
