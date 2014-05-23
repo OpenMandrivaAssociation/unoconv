@@ -1,4 +1,5 @@
 Summary:	Tool to convert between any document format supported by LibreOffice
+
 Name:		unoconv
 Version:	0.4
 Release:	7
@@ -38,11 +39,5 @@ RTF, Docbook (.xml), and more.
 %doc AUTHORS ChangeLog COPYING README TODO WISHLIST docs/ tests/
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1*
-
-
-%changelog
-* Sat Dec 07 2013 Bernhard Rosenkraenzer <bero@bero.eu> 0.4-7
-+ Revision: 339ab92
-- MassBuild#289: Increase release tag
 
 
