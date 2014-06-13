@@ -2,7 +2,7 @@ Summary:	Tool to convert between any document format supported by LibreOffice
 
 Name:		unoconv
 Version:	0.4
-Release:	7
+Release:	8
 License:	GPLv2
 Group:		File tools
 URL:		http://dag.wieers.com/home-made/unoconv/
