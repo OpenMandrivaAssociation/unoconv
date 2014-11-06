@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   unoconv-0.4.tar.bz2: 362168001f4653e495ee01d1235ef1a30307ac2f
+sources:
+  unoconv-0.6.tar.gz: d6c3574639b9ceedcb866b84f18ba7158f25db48

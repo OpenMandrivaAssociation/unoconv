@@ -1,16 +1,12 @@
 Summary:	Tool to convert between any document format supported by LibreOffice
 
 Name:		unoconv
-Version:	0.4
-Release:	9
+Version:	0.6
+Release:	1
 License:	GPLv2
 Group:		File tools
 URL:		http://dag.wieers.com/home-made/unoconv/
-Source0:	http://dag.wieers.com/home-made/%{name}/%{name}-%{version}.tar.bz2
-# Allow -o flag to output to files
-Patch0:		unoconv-output-files.patch
-# Fix LD_LIBRARY_PATH handling. From upstream trunk
-Patch1:		unoconv-ld-path.patch
+Source0:	http://dag.wieers.com/home-made/%{name}/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 
 Requires:	libreoffice-common
@@ -27,8 +23,7 @@ RTF, Docbook (.xml), and more.
 
 %prep
 %setup -q
-%patch0 -p3 -b .o_flag
-%patch1 -p3 -b .ld_library_path
+%apply_patches
 
 %build
 
@@ -36,7 +31,7 @@ RTF, Docbook (.xml), and more.
 %makeinstall_std
 
 %files
-%doc AUTHORS ChangeLog COPYING README TODO WISHLIST docs/ tests/
+%doc AUTHORS ChangeLog COPYING README.asciidoc WISHLIST tests/
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1*
 
