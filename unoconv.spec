@@ -23,7 +23,7 @@ RTF, Docbook (.xml), and more.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 
