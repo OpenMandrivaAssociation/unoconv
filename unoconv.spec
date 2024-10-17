@@ -5,7 +5,7 @@ Version:	0.6
 Release:	6
 License:	GPLv2
 Group:		File tools
-URL:		http://dag.wieers.com/home-made/unoconv/
+URL:		https://dag.wieers.com/home-made/unoconv/
 Source0:	http://dag.wieers.com/home-made/%{name}/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 
